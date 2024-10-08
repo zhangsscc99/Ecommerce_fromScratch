@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Category(models:Model):
+class Category(models.Model):
 
     name = models.CharField(max_length=250, db_index=True)
     #query acceleration  
@@ -26,7 +26,7 @@ class Product(models.Model):
 
     price = models.DecimalField(max_digits=4, decimal_places=2)
 
-    # image = models.ImageField(upload_to='images/')
+    image = models.ImageField(upload_to='images/')
 
 
 
